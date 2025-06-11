@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Envio - Azul Cargo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Emitir Envio</h1>
+    <select id="tipoDocumento">
+      <option value="NFe">Nota Fiscal Eletrônica</option>
+      <option value="Declaracao">Declaração de Conteúdo</option>
+    </select>
+    <div id="dadosNFe">
+      <input id="dataDocumento" type="date">
+      <input id="valorDocumento" placeholder="Valor Nota">
+      <input id="chaveAcesso" placeholder="Chave de Acesso">
+    </div>
+    <h2>Destinatário</h2>
+    <input id="nomeDest" placeholder="Nome">
+    <input id="cpfDest" placeholder="CPF ou CNPJ">
+    <input id="emailDest" placeholder="E-mail">
+    <input id="foneDest" placeholder="Telefone">
+    <input id="enderecoDest" placeholder="Endereço">
+    <input id="cepDest" placeholder="CEP">
+    <input id="estadoDest" placeholder="Estado (UF)">
+    <h2>Emitente</h2>
+    <input id="nomeEmit" placeholder="Nome">
+    <input id="cnpjEmit" placeholder="CNPJ">
+    <input id="emailEmit" placeholder="E-mail">
+    <input id="foneEmit" placeholder="Telefone">
+    <input id="enderecoEmit" placeholder="Endereço">
+    <input id="cepEmit" placeholder="CEP">
+    <input id="estadoEmit" placeholder="Estado (UF)">
+    <input id="produtoNatureza" placeholder="Natureza da Carga">
+    <button onclick="emitirEnvio()">Emitir Minuta</button>
+    <div id="resposta"></div>
+  </div>
+  <script src="assets/js/envio.js"></script>
+</body>
+</html>
