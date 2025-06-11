@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cotação - Azul Cargo</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="container">
-    <h2>Cotação de Frete</h2>
-    <form id="cotacao-form">
-      <label>Origem:</label>
-      <input type="text" name="origem" required />
-      <label>Destino:</label>
-      <input type="text" name="destino" required />
-      <label>Peso (kg):</label>
-      <input type="number" name="peso" required />
-      <label>Valor da NF:</label>
-      <input type="number" name="valorNF" required />
-      <button type="submit" class="btn">Calcular</button>
-    </form>
-    <div id="resultado"></div>
-    <a href="index.html" class="btn-voltar">Voltar</a>
+    <h1>Cotar Frete</h1>
+    <input id="cepOrigem" placeholder="CEP Origem">
+    <input id="cepDestino" placeholder="CEP Destino">
+    <input id="valorTotal" placeholder="Valor Total (R$)">
+    <input id="pedido" placeholder="Número do Pedido (opcional)">
+    <input id="quantidadeVolumes" type="number" placeholder="Qtd Volumes">
+    <label><input type="radio" name="coleta" value="sim">Com Coleta</label>
+    <label><input type="radio" name="coleta" value="nao" checked>Sem Coleta</label>
+    <div id="itens"></div>
+    <button onclick="gerarCamposItens()">Gerar Itens</button>
+    <button onclick="cotar()">Efetuar Cotação</button>
+    <div id="resultados"></div>
   </div>
-  <script src="js/app.js"></script>
+  <script src="assets/js/cotacao.js"></script>
 </body>
 </html>
+
