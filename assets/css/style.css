@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #004e9a;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #004e9a;
+}
+
+/* Forms */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form button,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #004e9a;
+  outline: none;
+}
+
+form button {
+  background-color: #004e9a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #00386c;
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #e8f1fc;
+  border-left: 5px solid #004e9a;
+  border-radius: 6px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f0f0f0;
+  color: #777;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  form {
+    padding: 1rem;
+  }
+}
