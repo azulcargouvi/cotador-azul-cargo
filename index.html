@@ -8,11 +8,13 @@
 </head>
 <body>
   <div class="container">
-    <img src="assets/img/logo.png" alt="Azul Cargo Logo" class="logo">
+<img src="/cotador-azul-cargo/assets/img/logo.png" alt="Logo Azul Cargo" class="logo-home" />
     <h1>Portal Azul Cargo</h1>
-    <input type="email" id="email" placeholder="E-mail">
-    <input type="password" id="senha" placeholder="Senha">
-    <button onclick="login()">Entrar</button>
+   <form id="login-form">
+  <input type="email" id="email" placeholder="E-mail" required />
+  <input type="password" id="senha" placeholder="Senha" required />
+  <button type="submit">Entrar</button>
+</form>
     <div id="msg"></div>
   </div>
   <script src="assets/js/auth.js"></script>
