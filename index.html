@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal Azul Cargo</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Azul Cargo</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div class="container">
-    <img src="img/logo.png" alt="Logo Azul Cargo" class="logo" />
-    <h1>Bem-vindo ao Portal Azul Cargo</h1>
-    <div class="links">
-      <a href="cotacao.html" class="btn">Fazer Cotação</a>
-      <a href="emissao.html" class="btn">Emitir Frete</a>
-    </div>
+    <img src="assets/img/logo.png" alt="Azul Cargo Logo" class="logo">
+    <h1>Portal Azul Cargo</h1>
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="password" id="senha" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <div id="msg"></div>
   </div>
+  <script src="assets/js/auth.js"></script>
 </body>
 </html>
